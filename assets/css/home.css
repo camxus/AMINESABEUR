@@ -1,0 +1,20 @@
+.intro {
+    width: 100%;
+    height: 100vh
+}
+
+.introname {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.introvideo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: introfadeIn 3s ease;
+}

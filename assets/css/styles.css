@@ -1,0 +1,33 @@
+@keyframes introfadeIn{
+    0%{
+      opacity: 0;
+    }
+    20%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: white;
+    /* overflow: hidden; */
+    font-family:  Helvetica Neue, Arial, sans-serif;
+}

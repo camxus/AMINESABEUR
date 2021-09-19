@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+}
+
+.headertext {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header_main_text {
+    font-size: 3vw;
+    transform: scaleY(3);
+    padding-bottom: 26px;
+}

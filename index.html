@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge"
+    name="AMINÉ SABEUR" content="PORTFOLIO, WEBPAGE AND BIO OF AMINÉ SABEUR"/>
+    <meta name="format-detection" content="telephone=no">
+    <title>AMINÉ SABEUR</title>
+</head>
+<body id="body">
+    <div class="nav">
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">WORKS</a>
+            <div class="dropdown-content">
+              <a href="./photo.html">PHOTO</a>
+              <a href="./video.html">VIDEO</a>
+            </div>
+          </li>
+        <!-- <li><a href="./news/news.html">NEWS</a></li> -->
+        <li><a href="#end">CONTACT</a></li>
+        <li style="float:right"><a href="mailto:darianepeutpas@gmail.com">AMINÉ SABEUR</a></li>
+    </div>
+<!-- MOBILE NAV -->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Top Navigation Menu -->
+    <div class="mobile-nav">
+        <div class="topnav" style="color: white">
+            <div class="bgfloat"></div>
+            <li><a href="mailto:darianepeutpas@gmail.com" class="active">AMINÉ SABEUR</a></li>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks" style="display: none">
+            <div id="background" style="opacity: 0"></div>
+            <div id="links" style="opacity: 0">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="./about/about.html">ABOUT</a></li> 
+                <a class="">WORKS</a>
+                <li><a href="./works/photo/photo.html" style="padding-left: 20vw;">    PHOTO</a></li> 
+                <li><a href="./works/video/video.html" style="padding-left: 20vw;">    VIDEO</a></li> 
+                <li><a href="./news/news.html">NEWS</a></li>
+                <li onclick="navbaropen()"><a href="#end">CONTACT</a></li>
+            </div>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="navbaropen()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+    </div>
+    <div class="intro">
+    <div class="introname" >
+        <h1 >AMINÉ SABEUR</h1>
+    </div>
+        <video class="introvideo" src="./assets/vid/Remorse_Edit_24fps_20210907.mp4" autoplay loop muted></video>
+    </div>
+    <!-- <div class="description">
+        <div class="text">
+            <p>daria marshenko moved to vienna 3 years ago. this transition fundamentally changed her life. because of her cultural (russian) background, in which so many topics are a taboo, the contrast of a /liberated/ european mentality deeply impacted and helped her unfold. 
+
+                marshenko’s philosophy of life, art and work are closely connected. her works are grounded on three themes:
+                
+                EXPERIMENTS /trying to find oneself/
+                
+                ATTENTION /analyzing environment,
+                people and their problems/
+                
+                TABOOS</p>
+        </div>
+    </div> -->
+<!--         
+    <section id="end" class="layer">
+        <div class="contacts">1070 VIENNA AUSTRIA<br><a href="tel:+43 660 2590772">+43 660 2590772</a><a href="mailto:darianepeutpas@gmail.com">DARIANEPEUTPAS@GMAIL.COM</a><a href="https://www.instagram.com/yanemogu">INSTAGRAM: @YANEMOGU</a>
+        </div>
+    </section> -->
+
+
+
+
+    <script src="assets/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="assets/js/lib/greensock/plugins/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/lib/jquery.min.js"></script>
+    <script src="assets/js/lib/modernizr.custom.min.js"></script>
+    <script src="assets/js/lib/iscroll-probe.js"></script>
+    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="assets/js/demo.js"></script>
+
+    <script src="./assets/js/app.js"></script>
+    <script type="text/javascript">
+        console.log(window.location.href);
+        if(window.location.href != "" && window.location.href != "" && window.location.href != "file:///Users/cam/Desktop/VS%20CODE/AMINE%20WEBISTE/index.html"){
+            window.location.href=window.location.href.substr(window.location.href,window.location.href.indexOf('#'))
+            }
+        </script>
+    <script src="./assets/js/navbar.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript">
+            var ScrollHandler = (function() {
+            //Assumes jQuery has initialized
+            var hasScrollListener = false;
+            var toggleScrollLock = function() {
+                if(!hasScrollListener) {
+                    $('body').css('overflow', 'hidden');
+                    // $('.freezeScroll').css('color', '#ff0000');
+                }
+                else { 
+                    $('body').css('overflow', '');
+                    // $('.freezeScroll').css('color', '#0000ff');
+                }
+                hasScrollListener = !hasScrollListener;
+            }
+            //Return a public toggle method
+            return {
+                toggleScrollLock: toggleScrollLock
+            };
+        });
+
+        $(document).ready(function() {
+            var scrollHandler = new ScrollHandler(),
+                links = $('.topnav a.icon');
+                links.each(function(i, element) {
+                    $(element).on('click', function(e) { scrollHandler.toggleScrollLock(); });
+                });
+        });
+    </script>
+</body>
+</html>

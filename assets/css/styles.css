@@ -31,3 +31,7 @@
     /* overflow: hidden; */
     font-family:  Helvetica Neue, Arial, sans-serif;
 }
+
+body {
+    background-color: black;
+}

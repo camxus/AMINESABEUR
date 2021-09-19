@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/works.css">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge"
+    name="AMINÉ SABEUR" content="PORTFOLIO, WEBPAGE AND BIO OF AMINÉ SABEUR"/>
+    <meta name="format-detection" content="telephone=no">
+    <title>AMINÉ SABEUR</title>
+</head>
+<body id="body">
+    <div class="navbar">
+        <li><a href="/index.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./works.html">WORKS</a></li>
+        <!-- <li><a href="./news/news.html">NEWS</a></li> -->
+        <li><a href="#end">CONTACT</a></li>
+        <li style="float:left"><a href="mailto:darianepeutpas@gmail.com">AMINÉ SABEUR</a></li>
+    </div>
+<!-- MOBILE NAV -->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Top Navigation Menu -->
+    <div class="mobile-nav">
+        <div class="topnav" style="color: white">
+            <div class="bgfloat"></div>
+            <li><a href="mailto:darianepeutpas@gmail.com" class="active">AMINÉ SABEUR</a></li>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks" style="display: none">
+            <div id="background" style="opacity: 0"></div>
+            <div id="links" style="opacity: 0">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="./about/about.html">ABOUT</a></li> 
+                <a class="">WORKS</a>
+                <li><a href="./works/photo/photo.html" style="padding-left: 20vw;">    PHOTO</a></li> 
+                <li><a href="./works/video/video.html" style="padding-left: 20vw;">    VIDEO</a></li> 
+                <li><a href="./news/news.html">NEWS</a></li>
+                <li onclick="navbaropen()"><a href="#end">CONTACT</a></li>
+            </div>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="navbaropen()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+<div class="works">
+    <div class="left_column">
+        <div class="preview_pane">
+            <a href="./works/andromida.html">
+                <div class="overlay"></div>
+                <div class="title">ANDROMIDA</div>
+                    <div class="preview">
+                        <img src="assets/img/Photography/OVERLAYS/ANDROMIDA.jpg"></img>
+                    </div>
+                </div>
+            </a>
+            <div class="preview_pane">
+                <div class="overlay"></div>
+                <div class="title">BIBIZA</div>
+                <div class="preview">
+                    <img src="assets/img/Photography/OVERLAYS/BIBIZA.jpg"></img>
+                </div>
+            </div>
+            <div class="preview_pane">
+                <div class="overlay"></div>
+                <div class="title">IM KREIS</div>
+                <div class="preview">
+                    <img src="assets/img/Photography/OVERLAYS/IM KREIS.png"></img>
+                </div>
+            </div>
+            <div class="preview_pane">
+                <div class="overlay"></div>
+                <div class="title">REMORSE</div>
+                <div class="preview">
+                    <img src="assets/img/Photography/OVERLAYS/REMORSE.jpg"></img>
+                </div>
+            </div>
+        </div>
+        <div class="right_column">
+            <div class="preview_pane">
+                <div class="overlay"></div>
+                <div class="title">LIBERTÉ</div>
+                <div class="preview">
+                    <img src="assets/img/Photography/OVERLAYS/LIBERTE.jpg"></img>
+                </div>
+            </div>
+            <div class="preview_pane">
+                <div class="overlay"></div>
+                <div class="title">NOT ABOUT YOU</div>
+                <div class="preview">
+                    <img src="assets/img/Photography/OVERLAYS/NOT ABOUT YOU.jpg"></img>
+                </div>
+            </div>
+            <div class="preview_pane">
+                <div class="overlay"></div>
+                <div class="title">ARCHIVE</div>
+                <div class="preview">
+                    <img src="assets/img/Photography/OVERLAYS/ARCHIVE.jpg"></img>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="assets/js/lib/greensock/plugins/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/lib/jquery.min.js"></script>
+    <script src="assets/js/lib/modernizr.custom.min.js"></script>
+    <script src="assets/js/lib/iscroll-probe.js"></script>
+    <script src="scrollmagic/minified/ScrollMagic.min.js"></script>
+    <script src="scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+    <script src="scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+    <script src="assets/js/demo.js"></script>
+
+    <script src="./assets/js/app.js"></script>
+    <script type="text/javascript">
+        console.log(window.location.href);
+        if(window.location.href != "" && window.location.href != "" && window.location.href != "file:///Users/cam/Desktop/VS%20CODE/AMINE%20WEBISTE/works.html"){
+            window.location.href=window.location.href.substr(window.location.href,window.location.href.indexOf('#'))
+            }
+        </script>
+    <script src="./assets/js/navbar.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript">
+            var ScrollHandler = (function() {
+            //Assumes jQuery has initialized
+            var hasScrollListener = false;
+            var toggleScrollLock = function() {
+                if(!hasScrollListener) {
+                    $('body').css('overflow', 'hidden');
+                    // $('.freezeScroll').css('color', '#ff0000');
+                }
+                else { 
+                    $('body').css('overflow', '');
+                    // $('.freezeScroll').css('color', '#0000ff');
+                }
+                hasScrollListener = !hasScrollListener;
+            }
+            //Return a public toggle method
+            return {
+                toggleScrollLock: toggleScrollLock
+            };
+        });
+
+        $(document).ready(function() {
+            var scrollHandler = new ScrollHandler(),
+                links = $('.topnav a.icon');
+                links.each(function(i, element) {
+                    $(element).on('click', function(e) { scrollHandler.toggleScrollLock(); });
+                });
+        });
+    </script>
+</body>
+</html>

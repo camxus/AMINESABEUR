@@ -151,7 +151,7 @@
       }
       
     .nav li a {
-        font-size: 90%;
+        font-size: 1rem;
         display: block;
         color: white;
         text-align: center;
@@ -198,14 +198,14 @@
     
     
     .navbar li {
-        float:left;
+        float:right;
         display: table-cell;
         position: relative;
         padding: 15px -22px;
       }
       
     .navbar li a {
-        font-size: 0.9vw;
+        font-size: 1rem;
         display: block;
         color: white;
         text-align: center;

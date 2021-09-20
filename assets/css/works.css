@@ -33,7 +33,7 @@
 }
 
 .title {
-    display:none;
+    display: block;
     text-align: center;
     font-weight: bold;
     letter-spacing: 4px;
@@ -42,10 +42,11 @@
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: all 1s;
+    transition: all 1s, letter-spacing 2s;
     font-size: 2.5rem;
     z-index: 1;
     pointer-events: none;
+    white-space: nowrap;
 }
 .preview {
     overflow: hidden;
@@ -61,6 +62,8 @@
     display: inline-block;
     opacity: 1;
     font-size: 3rem;
+    letter-spacing: 10px;
+
 }
 
 .preview_pane:hover .overlay{

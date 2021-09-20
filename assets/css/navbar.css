@@ -165,7 +165,7 @@
         /* left: 0; */
       }
     
-    a:after {
+    .nav a:after {
         /* background: none repeat scroll 0 0 transparent; */
         /* bottom: 11px; */
         transform: translate(0, 0);
@@ -179,27 +179,41 @@
         transition: width 0.3s ease 0s;
         width: 0;
       }
-
+      
       .navbar {
-        width: 95%;
-        display: inline;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        transform: translate(-4%, 33px);
-        position: absolute;
-        left: 7vw;
-        display: block;
-        font-weight: bold;
-        animation: fadeIn 1.5s ease;
-        position: fixed;
-        z-index: 2;
-    }
-    
-    
-    .navbar li {
-        float:right;
-        display: table-cell;
+          width: 95%;
+          display: inline;
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          transform: translate(-4%, 33px);
+          position: absolute;
+          left: 7vw;
+          display: block;
+          font-weight: bold;
+          animation: fadeIn 1.5s ease;
+          position: fixed;
+          z-index: 2;
+        }
+        
+        .navbar a:after {
+            /* background: none repeat scroll 0 0 transparent; */
+            /* bottom: 11px; */
+            transform: translate(0, 0);
+            content: "";
+            display: block;
+            height: 2px;
+            /* left: 18%; */
+            position: relative;
+            top: 1px;
+            background: white;
+            transition: width 0.3s ease 0s;
+            width: 0;
+          }
+        
+        .navbar li {
+            float:right;
+            display: table-cell;
         position: relative;
         padding: 15px -22px;
       }

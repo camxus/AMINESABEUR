@@ -18,7 +18,7 @@
 .right_column{
     grid-area: right;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     top: 8vh;
     position: absolute;
 }
@@ -33,6 +33,7 @@
 }
 
 .title {
+    display:none;
     text-align: center;
     font-weight: bold;
     letter-spacing: 4px;
@@ -44,6 +45,7 @@
     transition: all 1s;
     font-size: 2.5rem;
     z-index: 1;
+    pointer-events: none;
 }
 .preview {
     overflow: hidden;
@@ -56,6 +58,7 @@
 }
 
 .preview_pane:hover .title{
+    display: inline-block;
     opacity: 1;
     font-size: 3rem;
 }

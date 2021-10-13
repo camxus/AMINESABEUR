@@ -12,15 +12,15 @@
 .left_column {
     grid-area: left;
     width: 100%;
-    height: 100vh
+    height: 100vh;top: 1.6vh;position: relative;
 }
 
 .right_column{
     grid-area: right;
     width: 100%;
     /* height: 100vh; */
-    top: 8vh;
-    position: absolute;
+    top: 1.6vh;
+    position: relative;
 }
 
 .works img{

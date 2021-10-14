@@ -62,9 +62,9 @@
   }
   
   .carousel__nav {
-    display: flex;
+    display: none;
     justify-content: center;
-    padding: 10px 0;
+    padding: 10px 0;position: relative;top: -3vh;z-index: 3;
   }
   
   .carousel__indicator {
@@ -86,8 +86,19 @@
     display: none;
   }
 
-  .carousel__slide .carousel_image img {height: 100%;left: 50%;position: absolute;transform: translate(-50%, 0%);z-index: 3;object-fit: cover;   
+  .carousel__slide .carousel_image img {left: 50%;position: absolute;transform: translate(-50%, 0%);z-index: 3;object-fit: cover;   
   } 
+
+  @media all and (orientation: landscape) {
+    .carousel__slide .carousel_image img {height: 100%;
+    } 
+  }
+  
+  @media all and (orientation: portrait) {
+    .carousel__slide .carousel_image img {width: 100%;
+    } 
+  }
+
   .carousel_image {
     height: 100%;
     width: 100%;

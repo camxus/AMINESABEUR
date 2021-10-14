@@ -86,7 +86,7 @@
     display: none;
   }
 
-  .carousel__slide .carousel_image img {left: 50%;position: absolute;transform: translate(-50%, 0%);z-index: 3;object-fit: cover;   
+  .carousel__slide .carousel_image img {top:50%; left: 50%;position: absolute;transform: translate(-50%, -50%);z-index: 3;object-fit: cover;   
   } 
 
   @media all and (orientation: landscape) {

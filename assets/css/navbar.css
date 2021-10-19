@@ -25,11 +25,11 @@
     .topnav {
         overflow: hidden;
         width: 100vw;
-        position: absolute;
+        
         list-style-type: none;
-        /* height: -webkit-fill-available; */
+        
         z-index: 2;
-        /* background: #fff6e0; */
+        
         position: fixed;
         animation: fadeIn 1.5s ease;
     }
@@ -48,7 +48,7 @@
     .topnav #myLinks #background {
         z-index: -1;
         position: relative;
-        transform: translate(0, -72px);
+        
         width: 100vw;
         height: 100vh;
         background-color: black;

@@ -48,7 +48,7 @@
     pointer-events: none;
     white-space: nowrap;
 }
-.preview {
+.preview {min-height: 62vw;
     overflow: hidden;
 }
 

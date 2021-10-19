@@ -54,13 +54,18 @@
   }
   
   .carousel__button--left {
-    left: 0px;height: 100%;width: 50%;z-index: 1;cursor: w-resize;
+    left: 0px;height: 100%;width: 50%;z-index: 10;cursor: w-resize;
   }
   
   .carousel__button--right {
-    height: 100%;right: 0;width: 50%;cursor: e-resize;z-index: 1;
+    height: 100%;right: 0;width: 50%;cursor: e-resize;z-index: 10;animation: blend 1s ease-in-out 1000ms forwards; background-color: black; opacity: 0;
   }
   
+  @keyframes blend {
+    0% { opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+  }
   .carousel__nav {
     display: none;
     justify-content: center;
